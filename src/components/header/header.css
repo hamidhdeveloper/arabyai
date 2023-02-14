@@ -84,8 +84,8 @@
 
 @media only screen and (max-width: 600px) {
 
-    .header-right img,
-    .header-right button {
+    .header-right img
+     {
         display: none;
     }
 }
