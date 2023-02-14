@@ -1,0 +1,135 @@
+.BlackSection {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    margin-bottom: 150px;
+}
+
+.BlackSection h1 {
+    font-size: 40px;
+    font-weight: 500;
+    color: white;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.BlackSection p {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-align: center;
+
+}
+
+.BlackSection input {
+    padding: 10px 130px 10px 20px;
+    border: none;
+    height: 50px;
+    width: 80%;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.createimgdiv {
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    margin-top: 53px;
+}
+
+.createimgdiv button {
+    background: #1171d8;
+    background: linear-gradient(47deg, #1171d8, #3cc8eb);
+    color: #fff;
+    z-index: 2;
+    border: none;
+    height: 50px;
+    padding: 0px 25px;
+    inset: 0px 0px 0px auto;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.imagesboxes {
+    display: flex;
+    justify-content: center;
+}
+
+.imgrow {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    /* width: 86%; */
+    flex-direction: row;
+    /* margin: 0 auto; */
+}
+
+.imgrow img {
+    height: 300px;
+    display: flex;
+}
+
+.imgrow2 {
+    display: flex;
+    justify-content: center;
+    /* background-color: red; */
+    /* width: 86%; */
+    flex-direction: row;
+    /* margin: 0 auto; */
+}
+
+.imgrow2 img {
+    height: 300px;
+    display: flex;
+}
+
+@media only screen and (max-width: 600px) {
+    .BlackSection {
+        margin-bottom: 40px;
+        height: 750px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .BlackSection p {
+        margin-top: 15px;
+        width: 96%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .createimgdiv {
+        margin-top: 31px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .imgrow2 img,
+    .imgrow img {
+        height: 184px;
+        display: flex;
+        margin: 50px 10px 0px 10px;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .imgrow {
+        overflow: hidden;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .imagesboxes {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .BlackSection input {
+        width: 49%;
+        font-size: 12px;
+        padding-right: 0px;
+    }
+}

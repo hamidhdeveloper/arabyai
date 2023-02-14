@@ -1,0 +1,100 @@
+.AboutSection {
+    display: flex;
+    flex-direction: column;
+}
+
+.divtop {
+    margin-left: 66px;
+    margin-top: 100px;
+}
+
+.divtop h1 {
+
+    font-size: 48px;
+    font-weight: 500;
+}
+
+.aboutboxes {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 34px;
+}
+
+.aboutboxes .box {
+    align-items: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 30px #f0f0f0;
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 278px;
+    padding: 25px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    transition: .3s linear;
+    width: 380px;
+}
+
+.aboutboxes .box h4 {
+    margin-top: 12px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.aboutboxes .box h6 {
+    font-size: 16px;
+    font-weight: 300;
+    text-align: center;
+
+}
+
+.aboutboxes .box:hover {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+
+.thirdrowbutton {
+    display: flex;
+    justify-content: center;
+    margin: 40px 0px;
+
+}
+
+.thirdrowbutton button {
+    background: linear-gradient(45deg, #1171d8, #3cc8eb);
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 60px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    border: none;
+}
+
+.thirdrowbutton button:hover {
+    background-color: #02001d;
+    background-color: var(--text-color);
+    border-radius: 30px;
+    color: #fff;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+    .aboutboxes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .innerFooter {
+        flex-direction: column;
+
+    }
+}

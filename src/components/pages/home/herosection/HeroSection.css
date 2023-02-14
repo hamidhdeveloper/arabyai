@@ -1,0 +1,188 @@
+.HeroSection {
+    display: flex;
+    margin-top: 88px;
+    /* ff 3.6+ */
+
+}
+
+.HeroSection-left {
+    /* background-color: blue; */
+    flex: 1;
+    margin-left: 74px;
+    margin-top: 100px;
+}
+
+.HeroSection-left p {
+    font-size: 14px;
+    font-weight: 300;
+    color: white;
+}
+
+.HeroSection-left h1 {
+    font-size: 45px;
+    font-weight: 500;
+    color: white;
+}
+
+.HeroSection-left h6 {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: 300;
+    color: white;
+}
+
+.typewrite {
+    text-decoration: none;
+}
+
+.typewrite span {
+    font-size: 22px;
+    margin: 0px;
+    font-weight: 300;
+    color: white;
+
+}
+
+.HeroSection-left button {
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1rem;
+    padding: 15px 60px;
+    -webkit-transform: scale(.9);
+    transform: scale(.9);
+    background: linear-gradient(45deg, #1171d8, #3cc8eb);
+}
+
+.HeroSection-right {
+    /* background-color: yellow; */
+    flex: 1;
+    position: relative;
+}
+
+.HeroSection-right img {
+    z-index: 201;
+    position: absolute;
+    margin-top: 100px;
+    height: 405px;
+    align-items: flex-end;
+    margin-left: 76px;
+}
+
+.backgroundwhite {
+    position: absolute;
+    z-index: 0 !important;
+    opacity: 0.4;
+    height: 70% !important;
+}
+
+.HeroSection-left button:hover {
+    background-color: #02001d;
+    background-color: var(--text-color);
+    border-radius: 30px;
+    color: #fff;
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: all .5s ease;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .HeroSection,
+    .waves {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .waves {
+        height: 945px !important;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .HeroSection-right img {
+        margin-top: -11px;
+        height: 275px;
+    }
+}
+
+
+
+/* foranimation */
+:root {
+    --wav1: url('https://i.postimg.cc/43KhFcRw/wave.png');
+}
+
+body.dark {
+    --wav1: url('https://i.postimg.cc/FRBCX3YR/wave2.png');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.waves {
+    display: flex;
+    position: relative;
+    /* background:#3586ff; */
+    height: 550px;
+    width: 100%;
+    /* ff 3.6+ */
+    background: -moz-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background: -webkit-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+
+    /* opera 11.10+ */
+    background: -o-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+
+    /* ie 6-9 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee82ee', endColorstr='#C7A1FF', GradientType=0);
+
+    /* ie 10+ */
+    background: -ms-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+
+    /* global 94%+ browsers support */
+    background: linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+}
+
+.waves .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: var(--wav1);
+    background-size: 1000px 100px;
+}
+
+.waves .wave.wave1 {
+    animation: animate 5s linear infinite;
+    opacity: .7;
+    animation-delay: 1s;
+}
+
+.waves .wave.wave2 {
+    animation: animate 2s linear infinite;
+    opacity: .6;
+    animation-delay: 5s;
+}
+
+.waves .wave.wave3 {
+    animation: animate 2s linear infinite;
+    opacity: 1;
+    animation-delay: 0s;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
