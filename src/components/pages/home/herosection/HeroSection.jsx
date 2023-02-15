@@ -34,9 +34,9 @@ const HeroSection = () => {
             className="backgroundwhite"
           />
         </div>
-        <div class="wave wave1"></div>
-        <div class="wave wave2"></div>
-        <div class="wave wave3"></div>
+        <div className="wave wave1"></div>
+        <div className="wave wave2"></div>
+        <div className="wave wave3"></div>
       </div>
       {/* animation */}
     </div>
