@@ -26,7 +26,6 @@
 .header-right {
     /* border: 1px solid red; */
     flex-basis: 80%;
-    justify-content: end;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -59,7 +58,7 @@
 
 }
 
-.header-right  button {
+.header-right button {
     cursor: pointer;
     align-items: center;
     background: linear-gradient(90deg, #3a95f6 20%, #7a14ff);
