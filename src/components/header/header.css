@@ -28,6 +28,8 @@
     flex-basis: 80%;
     justify-content: end;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .header-right a {
@@ -36,8 +38,9 @@
     font-weight: 300;
     font-size: 20px;
     align-items: center;
-    margin-right: 8px;
-    margin-top: 18px;
+    padding-left: 12px;
+    /* margin-right: 8px;
+    margin-top: 18px; */
 }
 
 .header-right a:hover {
@@ -47,14 +50,16 @@
 .header-right img {
     height: 35px;
     width: 35px;
+    display: flex;
     align-items: center;
     margin-right: 25px;
-    margin-top: 15px;
+    /* margin-top: 15px; */
     cursor: pointer;
+    justify-content: center;
 
 }
 
-.header-right button {
+.header-right  button {
     cursor: pointer;
     align-items: center;
     background: linear-gradient(90deg, #3a95f6 20%, #7a14ff);
@@ -68,7 +73,7 @@
     padding: 7px 22px;
     height: 52px;
     margin-right: 23px;
-    margin-top: 7px;
+    /* margin-top: 7px; */
 }
 
 .header-right button:hover {

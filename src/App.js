@@ -1,24 +1,17 @@
-import Footer from "./components/footer/Footer";
-import Header from "./components/header/Header";
-import AboutSection from "./components/pages/home/aboutsection/AboutSection";
-import BlackSection from "./components/pages/home/blacksection/BlackSection";
-import EmailSection from "./components/pages/home/emailsection/EmailSection";
-import HeroSection from "./components/pages/home/herosection/HeroSection";
-import TopicSection from "./components/pages/home/topicsection/TopicSection";
+import { BrowserRouter,Routes,Route } from "react-router-dom";
+import Home from "./components/pages/home/Home";
+import Login from "./components/pages/login/Login";
 import './index.css'
 
 function App() {
-  return (
+  return <BrowserRouter>
     <div className="App">
-         <Header /> 
-         <HeroSection />
-         <EmailSection />
-         <BlackSection />
-         <TopicSection />
-         <AboutSection />
-         <Footer />
+    <Routes>
+        <Route path="/" element={ <Home /> } />
+        <Route path="login" element={ <Login /> } />
+    </Routes>    
     </div>
-  );
+    </BrowserRouter>;
 }
 
 export default App;
