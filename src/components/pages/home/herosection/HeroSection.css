@@ -188,12 +188,11 @@ body.dark {
 }
 
 /* for typewriter css */
-.heading {
-    font-size: 3em;
-    color: white;
-    text-transform: uppercase;
-  }
-  span {
-    border-right: .05em solid;
-    animation: caret 1s steps(1) infinite;
-  }
+.Typewriter__wrapper{
+    font-size: 22px;
+    font-weight: 300;
+    color: #fff;
+}
+.Typewriter__cursor{
+    color: #fff;
+}
