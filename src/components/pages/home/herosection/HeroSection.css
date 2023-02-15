@@ -186,3 +186,14 @@ body.dark {
         background-position-x: 1000px;
     }
 }
+
+/* for typewriter css */
+.heading {
+    font-size: 3em;
+    color: white;
+    text-transform: uppercase;
+  }
+  span {
+    border-right: .05em solid;
+    animation: caret 1s steps(1) infinite;
+  }

@@ -1,4 +1,5 @@
 import React from "react";
+import Typewriter from 'typewriter-effect';
 import "./HeroSection.css";
 const HeroSection = () => {
   return (
@@ -12,7 +13,7 @@ const HeroSection = () => {
             generator
           </h1>
           <h6>In a few minutes you can create</h6>
-          <h1>
+          {/* <h1>
             <a
               href=""
               class="typewrite"
@@ -21,7 +22,14 @@ const HeroSection = () => {
             >
               <span class="wrap"></span>
             </a>
-          </h1>
+          </h1> */}
+          <Typewriter
+                        options={{
+                          strings: ['New Articles', 'Social Media Content','Emails','I Love to Design.','Front-End Developer Hamid'],
+                          autoStart: true,
+                          loop: true,
+                        }}
+                    />
           <button style={{ marginTop: "20px", marginBottom: "50px" }}>
             Start Now
           </button>
