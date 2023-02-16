@@ -224,7 +224,6 @@
     transform: scale(0.9);
     transition: all .5s ease;
 }
-
 .line {
     display: flex;
     width: 100%;

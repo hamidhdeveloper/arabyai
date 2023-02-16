@@ -9,11 +9,11 @@ const Header = () => {
     setModal(!modal);
   };
 
-  // if (modal) {
-  //   document.body.classList.add("active-modal");
-  // } else {
-  //   document.body.classList.remove("active-modal");
-  // }
+  if (modal) {
+    document.body.classList.add("active-modal");
+  } else {
+    document.body.classList.remove("active-modal");
+  }
 
   return (
     <div className="header">
@@ -57,13 +57,13 @@ const Header = () => {
                     placeholder="Enter your email"
                     name="email"
                   />
-                  
+
                   <button className="loginbutton">Continue</button>
-                  
-                    <a href="#regmobile" className="regmobile">
-                       Register using Mobile Number?
-                    </a>
-                  
+
+                  <a href="#regmobile" className="regmobile">
+                    Register using Mobile Number?
+                  </a>
+
                   <div className="line2">
                     <div className="left-line2">
                       <hr />
@@ -74,23 +74,19 @@ const Header = () => {
                     </div>
                   </div>
                   <div className="twobutton">
-                  <button className="regfbAccountbutton">
-                   
-                    <img src="../assets/images/facebook.svg" alt="fb" />
-                    Facebook
-                  </button>
-                  <button className="regfbAccountbutton">
-                    
-                    <img src="../assets/images/googleIcon.svg" alt="gb" />
-                    Google
-                  </button>
+                    <button className="regfbAccountbutton">
+                      <img src="../assets/images/facebook.svg" alt="fb" />
+                      Facebook
+                    </button>
+                    <button className="regfbAccountbutton">
+                      <img src="../assets/images/googleIcon.svg" alt="gb" />
+                      Google
+                    </button>
                   </div>
                   <button className="regappleAccountbutton">
-                    
                     <img src="../assets/images/apple.svg" alt="app" />
                     Apple
                   </button>
-                 
                 </div>
               </div>
             </div>
