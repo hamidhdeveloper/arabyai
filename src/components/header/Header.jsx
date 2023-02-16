@@ -90,9 +90,9 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <button className="close-modal" onClick={toggleModal}>
+            {/* <button className="close-modal" onClick={toggleModal}>
               CLOSE
-            </button>
+            </button> */}
           </div>
         </div>
       )}
