@@ -10,6 +10,7 @@ body.active-modal {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: auto;
     position: fixed;
 }
 
@@ -17,6 +18,7 @@ body.active-modal {
     background: rgba(49,49,49,0.8);
 }
 .modal-content {
+    pointer-events: auto;
     position: absolute;
     /* top: 30%; */
     top: 50%;
@@ -28,6 +30,7 @@ body.active-modal {
     border-radius: 50px;
     max-width: 100%;
     min-width: 53%;
+    overflow-y: auto;
 }
 .mymodal{
     display: flex;
