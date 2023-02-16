@@ -1,0 +1,244 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(49,49,49,0.8);
+}
+.modal-content {
+    position: absolute;
+    /* top: 30%; */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: #ffffff;
+    padding: 14px 28px;
+    border-radius: 50px;
+    max-width: 100%;
+    min-width: 53%;
+}
+.mymodal{
+    display: flex;
+}
+.modal-left{
+    /* height: 400px; */
+    margin-top: 20px;
+    display: flex;
+    flex: 1 1;
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.modal-left h1{
+    font-weight: 400;
+    font-size: 22px;
+    font-family: 'Tajawal';
+    color: #1171d8;
+}
+.modal-left img{
+    height: 301px;
+}
+.modal-right{
+   /* background-color: blue; */
+    margin-top: 20px;
+    display: flex;
+    flex: 1 1;
+    /* background-color: red; */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.modal-right h1{
+     font-family: 'Tajawal';
+     font-weight: 500;
+     font-size: 20px;
+}
+.modal-right p {
+    font-family: 'Tajawal';
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0 auto;
+    color: #383838;
+    margin-bottom: 30px;
+
+}
+.loginform2{
+    display: flex;
+    flex-direction: column;
+    width: 88%;
+}
+.loginform2 input {
+    font-family: 'Tajawal';
+    -webkit-appearance: none;
+    appearance: none;
+    background-clip: padding-box;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 0.375rem;
+    color: #212529;
+    display: block;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    padding: 0.375rem 0.75rem;
+    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+    width: 100%;
+}
+.regmobile{
+    font-family: 'Tajawal';
+    font-size: 16px;
+    font-weight: 400;
+    color: #1171d8;
+    text-decoration: none;
+    text-align: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.line2 {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12px;
+}
+
+.left-line2 {
+    background-color: rebeccapurple;
+    flex: 1;
+}
+
+.left-line2 hr {
+    border-bottom: 0px solid #00000038;
+}
+
+.center-line2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 12px;
+    font-size: 12px;
+    font-family: 'Tajawal';
+    font-weight: 600;
+    color: rgba(128, 128, 128, 0.33);
+}
+
+.right-line2 {
+    flex: 1;
+    background-color: rgb(11, 160, 38);
+}
+
+.right-line2 hr {
+    border-bottom: 0px solid #00000038;
+}
+.twobutton{
+    display: flex;
+    margin-bottom: 7px;
+}
+
+.regfbAccountbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    margin-right: 8px;
+    margin-left: 8px;
+    width: 100%;
+    height: 35px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 'opacity' .9s ease;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    border: 1px solid #ffffff;
+}
+
+.regfbAccountbutton:hover {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: all .5s ease;
+}
+
+.regfbAccountbutton img {
+    height: 20px;
+    margin-right: 6px;
+}
+
+.regappleAccountbutton img {
+    height: 20px;
+    margin-right: 6px;
+}
+
+.regappleAccountbutton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    width: 100%;
+    height: 35px;
+    background-color: rgb(2, 2, 2);
+    border-radius: 5px;
+    transition: 'opacity' .9s ease;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    border: 1px solid #000000;
+    margin-bottom: 30px;
+}
+
+.regappleAccountbutton:hover {
+    opacity: 1;
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+    transition: all .5s ease;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    padding: 5px 7px;
+    border: 1px solid;
+    font-size: 9px;
+    border-radius: 50px;
+}
+.close-modal:hover{
+    border: 1px solid red;
+    color: red;
+}
+@media only screen and (max-width: 600px) {
+    .mymodal{
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .modal-content{
+        top: 80%;
+        min-width: 88%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+  .modal-left h1 br{
+    display: none;
+  }
+}
+  
