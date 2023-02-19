@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const EmailSection = () => {
   const { t } = useTranslation();
-  const currentdir= localStorage.getItem('dir') ;
+  const currentdir = localStorage.getItem("dir");
   // console.log("cureent direction "+currentdir);
 
   return (
@@ -20,7 +20,7 @@ const EmailSection = () => {
           {t("topic you want to write about and")} <br />
           {t("leave all the hassle to us.")}
         </p>
-        
+
         <img
           src="../assets/images/thinking.svg"
           className="thinkingimge"
@@ -30,7 +30,12 @@ const EmailSection = () => {
           src="../assets/images/arrow.png"
           className="arrowimge"
           alt="arrow"
-          style={currentdir === 'rtl' ? { right: '429px',transform: 'rotate(356deg)' } : {}}/>
+          style={
+            currentdir === "rtl"
+              ? { right: "429px", transform: "rotate(356deg)" }
+              : {}
+          }
+        />
       </div>
       <div className="EmailSection-right">
         <div className="emailbox">

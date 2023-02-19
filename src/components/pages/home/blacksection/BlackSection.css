@@ -116,7 +116,9 @@
 
 
 @media only screen and (max-width: 600px) {
-    .imgrow,.imgrow2 {
+
+    .imgrow,
+    .imgrow2 {
         overflow: hidden;
         width: 86%;
     }

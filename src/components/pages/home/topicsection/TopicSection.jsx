@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 
 const TopicSection = () => {
   const { t } = useTranslation();
-  const currentdir= localStorage.getItem('dir') ;
+  const currentdir = localStorage.getItem("dir");
   return (
     <div className="TopicSection">
       <div className="TopicSection-left">
@@ -43,7 +43,7 @@ const TopicSection = () => {
           src="../assets/images/tweet.svg"
           alt="tweetprofile"
           className="tweetimg"
-          style={currentdir === 'rtl' ? { left: '37px',right: 'inherit' } : {}}
+          style={currentdir === "rtl" ? { left: "37px", right: "inherit" } : {}}
         />
       </div>
     </div>
