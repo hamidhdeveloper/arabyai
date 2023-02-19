@@ -30,12 +30,12 @@ const Login = () => {
             </div>
           </div>
           <button className="fbAccountbutton">
-            {" "}
+           
             <img src="../assets/images/facebook.svg" alt="fb" />
             Facebook
           </button>
           <button className="fbAccountbutton">
-            {" "}
+           
             <img src="../assets/images/googleIcon.svg" alt="gb" />
             Google
           </button>

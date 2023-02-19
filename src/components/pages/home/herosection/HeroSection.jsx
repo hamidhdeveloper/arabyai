@@ -3,7 +3,8 @@ import Typewriter from "typewriter-effect";
 import "./HeroSection.css";
 import { useTranslation } from "react-i18next";
 const HeroSection = () => {
-  
+  const currentLanguage = localStorage.getItem('lang') ;
+  // console.log("hero section "+currentLanguage);
 
   const { t } = useTranslation();
  
@@ -37,11 +38,11 @@ const HeroSection = () => {
           </button>
         </div>
         <div className="HeroSection-right">
-        {/* {setIsArabic ? ( */}
+        {currentLanguage === 'en' ? (
           <img src="../assets/images/RobotA2-540.gif" alt="gif1" />
-          {/* ) : ( */}
-          {/* <img src="../assets/images/RobotA-Arabic.gif" alt="gif2" /> */}
-          {/* )} */}
+           ) : (
+          <img src="../assets/images/RobotA-Arabic.gif" alt="gif2" /> 
+          )} 
           <img
             src="../assets/images/background white.svg"
             alt="background"

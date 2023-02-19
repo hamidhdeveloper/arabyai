@@ -3,6 +3,7 @@ import "./BlackSection.css";
 import { useTranslation } from "react-i18next";
 const BlackSection = () => {
   const { t } = useTranslation();
+  const currentdir= localStorage.getItem('dir') ;
   return (
     <div className="BlackSection">
       <h1>{t('We turn your text into an image!')}</h1>
@@ -10,8 +11,9 @@ const BlackSection = () => {
       {t('Write what you want to visualise')}
       </p>
       <div className="createimgdiv">
-        <input type="text" placeholder={t('flying car in space...')} name="search" />
-        <button>{t('Create Image')}</button>
+
+        <input type="text" placeholder={t('flying car in space...')} name="search" style={currentdir === 'rtl' ? { borderRadius: '0px 5px 5px 0px',paddingRight: '20px' } : {}} />
+        <button style={currentdir === 'rtl' ? { borderRadius: '5px 0px 0px 5px' } : {}}>{t('Create Image')}</button>
       </div>
       <div className="imagesboxes">
         <div className="imgrow">

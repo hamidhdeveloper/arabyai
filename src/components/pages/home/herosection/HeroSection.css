@@ -9,8 +9,10 @@
     /* background-color: blue; */
     flex: 1;
     margin-left: 74px;
+    margin-right: 74px ;
     margin-top: 100px;
 }
+
 
 .HeroSection-left p {
     font-size: 14px;
@@ -67,6 +69,7 @@
     height: 405px;
     align-items: flex-end;
     margin-left: 76px;
+    margin-right: 76px;
 }
 
 .backgroundwhite {
@@ -107,7 +110,13 @@
         height: 275px;
     }
 }
+/* for rtl */
 
+@media only screen and (max-width: 600px) {
+    .HeroSection-left[dir="rtl"] {
+        margin-right: 74px !important;
+    }
+}
 
 
 /* foranimation */

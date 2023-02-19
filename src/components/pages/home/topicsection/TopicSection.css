@@ -60,6 +60,7 @@
     width: 81%;
     border: none;
     margin-left: 37px;
+    margin-right: 37px;
     margin-right: 11px;
 }
 
@@ -72,6 +73,7 @@
     color: #fff;
     cursor: pointer;
     margin-right: 37px;
+    margin-left: 37px;
     height: 30px;
     width: 30%;
 }

@@ -19,13 +19,16 @@ const Header = () => {
     const currentLanguage= localStorage.getItem('lang') ;
     // console.log("Loading Header",currentLanguage);
     i18n.changeLanguage(currentLanguage)
-    // if(currentLanguage==='en'){
-    //   document.body.dir= 'ltr'
-    // }else{
+    if(currentLanguage==='en'){
+      document.body.dir= 'ltr'
+      localStorage.setItem('dir','ltr');
+    }else{
+        const header = document.getElementById('header');
+        header.setAttribute('dir', 'ltr');
+      document.body.dir= 'rtl'
+      localStorage.setItem('dir','rtl');
       
-    //   document.body.dir= 'rtl'
-      
-    // }
+    }
     
     //  
     // document.body.dir= 'rtl'
@@ -62,7 +65,7 @@ const Header = () => {
 
   return (
     
-    <header className="header">
+    <header className="header" id="header">
       <div className="header-left">
         <img
           src="../assets/images/Araby.ai logo.svg"
