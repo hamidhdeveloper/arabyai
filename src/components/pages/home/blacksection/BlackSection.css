@@ -53,6 +53,7 @@
 .imagesboxes {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .imgrow {
@@ -115,8 +116,9 @@
 
 
 @media only screen and (max-width: 600px) {
-    .imgrow {
+    .imgrow,.imgrow2 {
         overflow: hidden;
+        width: 86%;
     }
 }
 

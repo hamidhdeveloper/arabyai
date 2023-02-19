@@ -197,12 +197,16 @@
 @media only screen and (max-width: 600px) {
     .mobileOImg {
         margin-top: -29px;
-        height: 56px;
+        height: 38px;
         display: block;
         margin-bottom: 71px;
     }
 }
-
+@media only screen and (max-width: 600px) {
+.aboutboxes .box {
+    margin-bottom: 30px;
+}
+}
 @media only screen and (max-width: 600px) {
     .TopicSection {
         flex-direction: column-reverse;
@@ -232,7 +236,14 @@
 @media only screen and (max-width: 600px) {
     .TopicSection-right {
         margin-left: 0px;
+        width: 90%;
     }
+}
+@media only screen and (max-width: 600px) {
+.tweetinput .row4 img {
+    margin-right: -6px;
+    height: 27px;
+}
 }
 
 @media only screen and (max-width: 600px) {
