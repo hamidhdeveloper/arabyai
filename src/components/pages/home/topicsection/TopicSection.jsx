@@ -43,7 +43,7 @@ const TopicSection = () => {
           src="../assets/images/tweet.svg"
           alt="tweetprofile"
           className="tweetimg"
-          style={currentdir === 'rtl' ? { left: '37px' } : {}}
+          style={currentdir === 'rtl' ? { left: '37px',right: 'inherit' } : {}}
         />
       </div>
     </div>
