@@ -1,38 +1,47 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
 import "./HeroSection.css";
+import { useTranslation } from "react-i18next";
 const HeroSection = () => {
+  
+
+  const { t } = useTranslation();
+ 
   return (
     <div className="HeroSection">
       {/* animation */}
-      <div class="waves">
+      <div className="waves">
         <div className="HeroSection-left">
-          <p>Learn more about Araby AI</p>
-          <h1>An AI based content</h1>
+          <p>{t("Learn more about Araby AI")}</p>
+          <h1>{t("An AI based content")}</h1>
           <h1 style={{ marginTop: "-11px", marginBottom: "20px" }}>
-            generator
+            {t("generator")}
           </h1>
-          <h6>In a few minutes you can create</h6>
+          <h6>{t("In a few minutes you can create")}</h6>
 
           <Typewriter
             options={{
               strings: [
-                "New Articles",
-                "Social Media Content",
-                "Emails",
-                "I Love to Design.",
-                "Front-End Developer Hamid",
+                t("New Articles"),
+                t("Social Media Content"),
+                t("Emails"),
+                t("I Love to Design"),
+                t("Front-End Developer Hamid"),
               ],
               autoStart: true,
               loop: true,
             }}
           />
           <button style={{ marginTop: "20px", marginBottom: "50px" }}>
-            Start Now
+            {t("Start Now")}
           </button>
         </div>
         <div className="HeroSection-right">
+        {/* {setIsArabic ? ( */}
           <img src="../assets/images/RobotA2-540.gif" alt="gif1" />
+          {/* ) : ( */}
+          {/* <img src="../assets/images/RobotA-Arabic.gif" alt="gif2" /> */}
+          {/* )} */}
           <img
             src="../assets/images/background white.svg"
             alt="background"

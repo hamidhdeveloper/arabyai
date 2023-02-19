@@ -1,16 +1,17 @@
 import React from "react";
 import "./BlackSection.css";
+import { useTranslation } from "react-i18next";
 const BlackSection = () => {
+  const { t } = useTranslation();
   return (
     <div className="BlackSection">
-      <h1>We turn your text into an image!</h1>
+      <h1>{t('We turn your text into an image!')}</h1>
       <p>
-        Write what you want to visualise, and we will turn your imagination into
-        reality!
+      {t('Write what you want to visualise')}
       </p>
       <div className="createimgdiv">
-        <input type="text" placeholder="flying car in space..." name="search" />
-        <button>Create Image</button>
+        <input type="text" placeholder={t('flying car in space...')} name="search" />
+        <button>{t('Create Image')}</button>
       </div>
       <div className="imagesboxes">
         <div className="imgrow">

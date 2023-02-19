@@ -1,42 +1,45 @@
 import React from "react";
 import "./Footer.css";
+import { useTranslation } from "react-i18next";
+
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <div className="footer">
       <div className="innerFooter">
         <div className="footer-col-1">
-          <h4>Company</h4>
+          <h4>{t("Company")}</h4>
           <ul className="navlinkFooter">
             <li>
-              <a href="#link">Features</a>
+              <a href="#link">{t("Features")}</a>
             </li>
             <li>
-              <a href="#link">Terms and Conditions</a>
+              <a href="#link">{t("Terms and Conditions")}</a>
             </li>
             <li>
-              <a href="#link">Privacy Policy</a>
+              <a href="#link">{t("Privacy Policy")}</a>
             </li>
           </ul>
         </div>
         <div className="footer-col-1">
-          <h4>Help</h4>
+          <h4>{t("Help")}</h4>
           <ul className="navlinkFooter">
             <li>
-              <a href="#link">Contact Us</a>
+              <a href="#link">{t("Contact Us")}</a>
             </li>
             <li>
-              <a href="#link">Share Feedback</a>
+              <a href="#link">{t("Share Feedback")}</a>
             </li>
           </ul>
         </div>
         <div className="footer-col-1">
-          <h4>Support</h4>
+          <h4>{t("Support")}</h4>
           <ul className="navlinkFooter">
             <li>
-              <a href="#link">Report a Bug</a>
+              <a href="#link">{t("Report a Bug")}</a>
             </li>
             <li>
-              <a href="#link">Report an Outage</a>
+              <a href="#link">{t("Report an Outage")}</a>
             </li>
           </ul>
         </div>
@@ -61,7 +64,7 @@ const Footer = () => {
       </div>
       <div className="footerlogo">
         <img src="../assets/images/footerlogo.png" alt="footerlogo" />
-        <p>© 2023 Araby AI All rights reserved.</p>
+        <p>{t("2023 Araby AI All rights reserved.")}</p>
       </div>
     </div>
   );
