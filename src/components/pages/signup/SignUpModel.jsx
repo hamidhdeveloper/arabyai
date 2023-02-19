@@ -1,44 +1,47 @@
 import React from 'react'
 import './SignUpModel.css'
+import { useTranslation } from "react-i18next";
 const SignUpModel = ({modal,toggleModal}) => {
+  const { t } = useTranslation();
+  const currentdir= localStorage.getItem('dir') ;
   return (
     <div>
       {modal && (
         <div className="modal">
           <div onClick={toggleModal} className="overlay"></div>
           <div className="modal-content">
-            <div className="mymodal">
+            <div className="mymodal" style={currentdir === 'rtl' ? { flexDirection: 'row-reverse' } : {}}>
               <div className="modal-left">
                 <h1>
-                  Join Now And Receive A Special Gift <br />
-                  From Us
+                  {t('Join Now And Receive A Special Gift')} <br />
+                  {t('From Us')}
                 </h1>
                 <img src="../assets/images/realSignImg.svg" alt="modelimg" />
               </div>
               <div className="modal-right">
-                <h1>Create Account.. </h1>
+                <h1>{t('Create Account..')} </h1>
                 <p>
-                  Get Access to Social Media, Emails, Articles,
-                  <br /> Advertisements, Images, and Much More
+                {t('Get Access to Social Media, Emails, Articles,')}
+                  <br /> {t('Advertisements, Images, and Much More')}
                 </p>
                 <div className="loginform2">
                   <input
                     type="text"
-                    placeholder="Enter your email"
+                    placeholder={t('Enter Your Email')}
                     name="email"
                   />
 
-                  <button className="loginbutton">Continue</button>
+                  <button className="loginbutton">{t('Continue')}</button>
 
                   <a href="#regmobile" className="regmobile">
-                    Register using Mobile Number?
+                  {t('Register using Mobile Number?')}
                   </a>
 
                   <div className="line2">
                     <div className="left-line2">
                       <hr />
                     </div>
-                    <div className="center-line2">Or Continue With</div>
+                    <div className="center-line2">{t('Or Continue With')}</div>
                     <div className="right-line2">
                       <hr />
                     </div>

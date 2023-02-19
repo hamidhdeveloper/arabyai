@@ -1,7 +1,9 @@
 import React from "react";
 import "./Login.css";
+import { useTranslation } from "react-i18next";
 
 const Login = () => {
+  const { t } = useTranslation();
   return (
     <div className="Login">
       <div className="login-left">
@@ -9,22 +11,22 @@ const Login = () => {
           <img src="../assets/images/Araby.ai logo.svg" alt="logo login" />
         </div>
         <div className="welcome">
-          <h1>Welcome </h1>
+          <h1>{t('Welcome') } </h1>
           <img src="../assets/images/hand.gif" alt="handicon" />
         </div>
-        <p>Please Sign in to continue</p>
+        <p>{t('Please Sign in to continue')}</p>
         <div className="loginform">
-          <input type="text" placeholder="Enter Your Email" name="email" />
+          <input type="text" placeholder={t('Enter Your Email')} name="email" />
           <br />
-          <input type="password" placeholder="Password" name="email" />
-          <a href="#forgot">Forgot password?</a>
-          <button className="loginbutton">Login</button>
-          <button className="createAccountbutton">Create Account</button>
+          <input type="password" placeholder={t('Password')} name="email" />
+          <a href="#forgot">{t('Forgot password?')}</a>
+          <button className="loginbutton">{t('Login')}</button>
+          <button className="createAccountbutton">{t('Create Account')}</button>
           <div className="line">
             <div className="left-line">
               <hr />
             </div>
-            <div className="center-line">Or Continue With</div>
+            <div className="center-line">{t('Or Continue With')}</div>
             <div className="right-line">
               <hr />
             </div>
@@ -47,7 +49,7 @@ const Login = () => {
           <div className="mobilelogin">
             <a href="#mobilelogin">
               <img src="../assets/images/leftarrow.png" alt="arrow" />
-              <span>Login using Mobile</span>
+              <span>{t('Login using Mobile')}</span>
             </a>
           </div>
         </div>
@@ -56,7 +58,7 @@ const Login = () => {
         <div className="loginbackground">
           <img src="../assets/images/loginbackground.gif" alt="logo" />
         </div>
-        <h1>Creating Magic</h1>
+        <h1>{t('Creating Magic')}</h1>
       </div>
     </div>
   );
