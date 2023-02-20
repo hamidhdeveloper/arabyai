@@ -139,23 +139,32 @@ body.dark {
     /* background:#3586ff; */
     height: 550px;
     width: 100%;
-    /* ff 3.6+ */
-    background: -moz-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+    background: linear-gradient(-45deg, rgba(199, 161, 255, 1), #e73c7e, #23a6d5, rgba(119, 23, 253, 1));
+    /* animation bg */
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	/* height: 100vh; */
 
-    /* safari 5.1+,chrome 10+ */
+        
+    /* background: -moz-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+
+    
     background: -webkit-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
 
-    /* opera 11.10+ */
+    
     background: -o-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
 
-    /* ie 6-9 */
+    
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ee82ee', endColorstr='#C7A1FF', GradientType=0);
 
-    /* ie 10+ */
+   
     background: -ms-linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
 
-    /* global 94%+ browsers support */
+    
     background: linear-gradient(90deg, rgba(199, 161, 255, 1) 0%, rgba(119, 23, 253, 1) 48%, rgba(238, 130, 238, 1) 100%);
+
+ */
+
 }
 
 .waves .wave {
@@ -194,6 +203,19 @@ body.dark {
     100% {
         background-position-x: 1000px;
     }
+}
+
+/* animation */
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 /* for typewriter css */
